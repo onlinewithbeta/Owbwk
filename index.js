@@ -198,6 +198,10 @@ const userSchema = new mongoose.Schema({
 
 
 
+  app.get("/", async (req, res)=> {
+    res.send("ok guy")
+  })
+    
 
   app.post("/wk", async (req, res)=> {
     const body = req.body;
