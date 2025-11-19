@@ -199,7 +199,7 @@ const userSchema = new mongoose.Schema({
 
 
   app.get("/", async (req, res)=> {
-    res.send("ok guy")
+    res.status(200).json({message:"ready"})
   })
     
 
